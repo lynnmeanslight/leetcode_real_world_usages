@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        input[type="number"] {
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .items-list {
+            margin: 20px 0;
+        }
+
+        .item {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #007bff;
+        }
+
+        .no-result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Shopping Cart</h1>
+        <input type="number" id="budget" placeholder="Enter your budget">
+        <button onclick="findItems()">Find Items</button>
+        
+        <div class="items-list">
+            <div class="item">Item 1: $2</div>
+            <div class="item">Item 2: $7</div>
+            <div class="item">Item 3: $11</div>
+            <div class="item">Item 4: $15</div>
+        </div>
+        
+        <div id="result" class="result"></div>
+        <div id="noResult" class="no-result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
